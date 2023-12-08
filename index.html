@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="comprar.css" />
+
+    <title>Compra y Venta en Mexico</title>
+
+    <!-- <script defer src="comprar.js"></script> -->
+    <script defer src="comprarnew.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://upload-widget.cloudinary.com/global/all.js"
+      type="text/javascript"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Start dispplay -->
+
+    <div id="terms-and--conditions">
+      <h4 id="back-from-terms-and--conditions">Regresar</h4>
+      <h1>Terminos y Condiciones</h1>
+      <h6>Leelos Cuidadosamente</h6>
+      <h2>Legales</h2>
+      <p>ichkqjb jq wbvou qwa v3jqw</p>
+      <h2>Ilegales</h2>
+      <p>ichkqjb jq wbvou qwa v3jqw</p>
+    </div>
+    <div id="main-container">
+      <!-- start header -->
+      <div id="header-top" class="header-top"></div>
+
+      <div id="header-low">
+        <img id="app-logo--img" src="images/logo.png" alt="" />
+        <!-- <p id="header-name" class="header-name">Compra y Venta En Mexico</p> -->
+        <p id="header-name" class="header-name">Compra y Venta</p>
+        <p id="number-of--users"><span>500</span> usuarios</p>
+      </div>
+
+      <!-- end header -->
+
+      <!-- Start Top Bar -->
+
+      <!-- <div id="top-bar-for--btnmenu"> -->
+      <button id="btnmenu">⚙️</button>
+      <button id="btnpremium">Pro🔶</button>
+      <!-- </div> -->
+
+      <div id="top-bar">
+        <textarea name="" id="buy-search--input" cols="30" rows="1"></textarea>
+        <button id="btnsearch-buy--cancel">cancelar</button>
+      </div>
+
+      <!-- end Top Bar -->
+
+      <!-- start create account or login -->
+
+      <div id="logcreateHalf">
+        <div id="logcreate">
+          <p class="description-wellcome">
+            ¡BIENVENIDO AL CENTRO DE COMPRA Y VENTA!
+          </p>
+        </div>
+        <img src="images/logo.png" alt="" />
+        <button id="btnlogin">Iniciar seccion</button> <br />
+        <button id="btncreate-account">Crear una cuenta</button>
+        <div class="description-app-login">
+          ¿Desea comprar o vender algo? Nuevo o usado. Nosotros nos encargamos a
+          conectar los clientes con los vendedores. Con esta aplicacion simple,
+          y facil de usar apoyamos en una manera eficiente a los que se dedican
+          al negocio de Compra y Venta en MÉXICO
+        </div>
+      </div>
+
+      <!-- start Create Account -->
+      <div id="create-account" class="">
+        <h2>Crea tu cuenta</h2>
+
+        <p class="createaccount-inp-description">Crea un nombre de usuario:</p>
+        <input
+          class="creataccount-inputs creataccount-username"
+          type="text"
+          placeholder="Ventas@s"
+        />
+        <p class="createaccount-inp-description">Numero de celular:</p>
+        <input
+          class="creataccount-inputs creataccount-phonenum"
+          type="number"
+          placeholder="9817531297"
+        />
+        <p class="createaccount-inp-description">Crear una contraseña:</p>
+        <input
+          class="creataccount-inputs creataccount-createpassword"
+          type="password"
+          placeholder="e8gd44"
+        />
+        <p class="createaccount-inp-description">Confirma tu contraseña:</p>
+        <input
+          class="creataccount-inputs creataccount-confirmpassword"
+          type="password"
+          placeholder="e8gd44"
+        />
+        <br />
+
+        <button class="btncreate-account">Crear Cuenta</button><br />
+        <button class="btncancel-logcreate">Cancelar</button><br />
+        <div class="container-spinner--logo create-account-spinner--logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div id="p2">
+          <input
+            type="checkbox"
+            name="agree-terms"
+            value="agreed"
+            id="agree-to-terms--conditions"
+          />
+
+          <p id="go-to-terms-and-conditions--app">
+            He leido y acepto los términos y condiciones del uso de esta
+            aplicación
+          </p>
+
+          <br />
+
+          Necesitamos esta informacion para poder brindarte un servicio completo
+          de nuestra aplicacion. Nota que tu imformacion está seguro con
+          nosotros.
+        </div>
+      </div>
+
+      <!-- end Create Account -->
+
+      <!-- start login -->
+
+      <div id="login" class="">
+        <h2>Iniciar Seccion</h2>
+        <div id="input-seccion">
+          <p class="login-inp-description">Nombre de usuario:</p>
+          <input
+            class="login-inputs login-username"
+            type="text"
+            placeholder="Ventas@"
+          />
+          <p class="login-inp-description">Numero de celular:</p>
+          <input
+            class="login-inputs login-phonenum"
+            type="number"
+            placeholder="9817531297"
+          />
+
+          <p class="login-inp-description">Tu contraseña:</p>
+          <input
+            class="login-inputs login-password"
+            type="password"
+            placeholder="******"
+          />
+
+          <p></p>
+          <button class="btnlogin">Iniciar seccion</button> <br />
+          <button class="btn2cancel-logcreate">Cancelar</button> <br />
+          <div class="container-spinner--logo login-spinner--logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <p2>
+            Introduce tus datos aqui e inicia sección para empezar a disfrutar
+            los beneficios de esta aplicacion
+          </p2>
+        </div>
+      </div>
+
+      <!-- end login -->
+
+      <!-- end create account or login -->
+
+      <!-- starting container main buy -->
+      <div id="container-main--buy" class="clearfix"></div>
+      <!--end container main buy -->
+
+      <!-- starting container main search -->
+      <div id="container-main--search" class="clearfix"></div>
+      <!--end container main search -->
+
+      <!-- starting container main ads -->
+      <div id="container-main--ads" class="clearfix"></div>
+      <!--end container-main--ads-->
+
+      <!-- start container main ask -->
+      <div id="container-main--ask" class="clearfix container-overflow--x">
+        <!-- start modal Ask Description Text -->
+
+        <p class="ask-description--text">
+          <span class="ask-description_text"
+            >¿Quieres comprar algo que no puedes ver?</span
+          >
+          Pregunta aqui. Tus preguntas serán visibles para todos los usuarios
+          por
+          <span id="ask-description-text--time"></span> dias. Despues serán
+          borados automaticamente.
+        </p>
+        <!-- end modal Ask Description Text -->
+        <div id="textarea-ask--div">
+          <textarea name="text" id="textarea-ask" cols="30" rows="2"></textarea>
+          <br />
+          <button class="btnask-cancel">cancelar</button>
+          <button type="reset" class="btnask-now">enviar</button>
+        </div>
+      </div>
+      <!-- end container main ask -->
+
+      <!-- start Button btnask-->
+
+      <div id="btnaskDiv">
+        <button class="btnask">preguntar por algo</button>
+      </div>
+      <!-- end Button btnask-->
+
+      <!-- start container main sell -->
+      <div
+        id="container-main--sell"
+        class="clearfix container-overflow--x"
+      ></div>
+
+      <!--end container main sell-->
+
+      <!-- start container main message -->
+      <!-- <div class="container-message">This is the message public container.</div> -->
+      <!-- end container main message -->
+
+      <!-- start footer -->
+      <div id="footer">
+        <button id="btnask" class="btncolum" data-cur="0">Preguntar</button>
+        <button id="btnads" class="btncolum" data-cur="0">Conocer</button>
+        <button id="btnbuy" class="btncolum" data-cur="0">Comprar</button>
+        <button id="btnsell" class="btncolum" data-cur="0">Mis Ventas</button>
+      </div>
+
+      <!-- end footer and out-side modals-->
+
+      <!-- start footer -->
+      <div id="con-hide--footer">
+        <!-- <button id="btnask" class="btncolum" data-cur="0">Preguntar</button>
+        <button id="btnads" class="btncolum" data-cur="0">Conocer</button>
+        <button id="btnbuy" class="btncolum" data-cur="0">Comprar</button>
+        <button id="btnsell" class="btncolum" data-cur="0">Mis Ventas</button> -->
+      </div>
+
+      <!-- end footer and out-side modals-->
+
+      <button id="btnpublish">Vender</button>
+
+      <div id="promodal">
+        <p id="options">--- opciones ---</p>
+        <p>Usar Cupon de promoción</p>
+        <button id="btnchoose-use--cupon">Cupon</button>
+        <p id="try-app">
+          Probar la app completamente GRATIS por un plazo de
+          <span>30</span> dias
+        </p>
+        <button id="btntry-app">Probar</button>
+        <p id="plan">Adquirir plan para la app</p>
+        <h6>has click para ver descuentos</h6>
+        <button id="btnbuy-app">Comprar</button> <br />
+        <button id="btncancel">Cancelar</button>
+      </div>
+
+      <div id="promodal-discounts">
+        <h1 id="pd-actual-price-description--text">
+          Precio Plan/Año $<span id="price">249</span>
+        </h1>
+        <p id="pd-general-discount-description--text">
+          compra ahora y recibe el <span id="discount">5</span>% de descuento
+        </p>
+        <p id="pd-ondiscount-price-description--text">
+          a tan solo $<span id="ondiscount-price">236.55</span>
+        </p>
+        <div id="compare-version-of--app">
+          <p id="comparalos">comparalos</p>
+          <div id="compare-version-of-app--standart">
+            <h1>Version Standart</h1>
+            <p>- Ventas limitadas</p>
+          </div>
+          <div id="compare-version-of-app--premium">
+            <h1>Version Premium</h1>
+            <p>- Ventas ilimitadas</p>
+          </div>
+        </div>
+
+        <div id="special-discount--show">
+          <h5>Además tenemos un descuento increíble especialmente para Tí</h5>
+          <p id="pd-special-discount-description--text">
+            ¡Compra ahora y recibe el <span id="special-discount"></span>% de
+            descueto!
+          </p>
+          <p id="pd-onspecial-discount-price-description--text">
+            a tan solo $<span id="onspecial-discount--price"></span>
+          </p>
+          <h6>recuerda que solo es por un tiempo limitado</h6>
+        </div>
+        <div id="pd-final-ondiscount--price">
+          <h1 id="pd-final-ondiscount-price-description--text">
+            Pagarás $<span id="final-price"></span
+            ><span id="after-text">por un año</span>
+          </h1>
+        </div>
+
+        <button id="btncontinue-to--pay">continuar a pagar</button><br />
+        <button id="btncancel">cancelar</button>
+      </div>
+
+      <div id="cuponmodal">
+        <p id="cupon">--- cupón ---</p>
+        <h2>Ingerese tu CUPÓN aqui</h2>
+        <input type="text" name="" id="inputcupon" /> <br />
+        <button id="btnuse-cupon">Listo</button> <br />
+        <button id="btncancel">Cancelar</button>
+      </div>
+
+      <div id="cur-user--info--container">
+        <button>🔙</button>
+        <button id="btnchange">Cambiar</button>
+        <button id="btnlogout">Cerrar Seccion</button>
+        <button id="btndelete-account">Eliminar Cuenta</button>
+        <h1>Tus Puntos <span>000</span></h1>
+        <h2>
+          Valor en Pesos $<span>000</span> Tendras descuento al comprar el plan
+          de la APP
+        </h2>
+      </div>
+
+      <div id="cur-stats--user--change">
+        <p class="change-inp-description top-change-inp-description">
+          Nombre de usuario:
+        </p>
+        <input class="change-inputs change-username" type="text" />
+        <p class="change-inp-description">Numero de celular:</p>
+        <input class="change-inputs change-phonenum" type="number" />
+
+        <p class="change-inp-description">Tu contraseña:</p>
+        <input class="change-inputs change-password" type="text" />
+        <p class="change-inp-description">Confirma tu contraseña:</p>
+        <input class="change-inputs change-confirmpassword" type="password" />
+        <br />
+        Cuento con WhatsApp:<select
+          name=""
+          id="change-has-whatsApp"
+          class="inputs-Whats-Check"
+        >
+          <option value="true">Si</option>
+          <option value="false">No</option></select
+        ><br />
+
+        <button id="cancel">Cancelar</button>
+        <button id="done">Listo</button>
+      </div>
+
+      <div id="main-stats--container">
+        <button>🔙</button>
+        <p>App Statistics</p>
+
+        <div id="sumary-users--container">
+          <p>Users Sumary</p>
+          <div id="bar-graph-allusers--sumary">
+            <div id="sumary-prousers--disp">pro</div>
+            <div id="sumary-ontrialusers--disp">on trial</div>
+            <div id="sumary-normusers--disp">normal</div>
+          </div>
+          <h1 id="pro">Pro users: <span>0</span></h1>
+          <h1 id="on-trial">On Trial users: <span>0</span></h1>
+          <h1 id="norm">Normal users: <span>0</span></h1>
+          <h1 id="total">Total users: <span>0</span></h1>
+        </div>
+      </div>
+
+      <div id="main-tools--container">
+        <button>🔙</button>
+        <p id="tools-description--text">App Tools</p>
+
+        <div id="main-cupon-creator--container">
+          <p id="tool-sort-cupon--creator">Cupon Creator</p>
+          <div id="main-cupon-display--container">
+            <!-- <p id="cupon-display"></p> -->
+            <div id="cupon-display"></div>
+
+            <div id="absolute-has--to">
+              <select name="" id="cupon-type--selector">
+                <option value="true"></option>
+                <option value="false">% Discount</option>
+                <option value="false">Days Free</option>
+              </select>
+              <input id="quantity-of-selected" type="number" />
+            </div>
+
+            <button id="get" class="btncreate-get--cupon">Get Cupon</button
+            ><br />
+            <button id="use" class="btncreate-use--cupon">Use Cupon</button>
+          </div>
+
+          <div id="main-cupon-show--container">
+            <div id="container-cupons--show"></div>
+            <div id="container-savedcupons--show"></div>
+            <button id="btnclear">Clear New Cupons</button>
+          </div>
+        </div>
+
+        <div id="main-new-ad--container">
+          <p id="tool-sort-ad--creator">Ad Creator</p>
+          <div id="ad-image--container">
+            <button id="tap-upload-img-for--ad">upload img or video</button>
+
+            <div id="img-container-for-ad">
+              <img id="img-for--ad" src="images/image not loaded.jpeg" alt="" />
+            </div>
+
+            <p id="input-url-for-ad-video-descrption--text">
+              Use video instead:
+              <p id="input-url-for-ad-video-descrption-text--Secondary">
+                We have no url validation. Make sure you input a correct url
+              </p>
+            </p>
+            <input
+              type="url"
+              name=""
+              id="input-url-for-ad--video"
+              placeholder="input video url here"
+            />
+            <button id="btnuse-input-url-for-ad--video">Use url</button>
+
+            <p id="ad-live--description">Ad Live Description Here</p>
+          </div>
+          <div id="ad-decription--container">
+            <textarea
+              name=""
+              id="ad-description--text"
+              cols="3"
+              rows="3"
+            ></textarea
+            ><br />
+
+            <div id="con-btns-ad--creator">
+              <button id="btnadload-adds">Load Adds</button> <br />
+              <button id="btnad-clear--text" class="btnsad-con">
+                Clear Text
+              </button>
+              <br />
+              <button id="btnad-delete--img" class="btnsad-con">
+                Delete Img
+              </button>
+              <br />
+
+              <button id="btnad-send" class="btnsad-con">Send</button>
+            </div>
+          </div>
+          <div id="disp-all--adds"></div>
+        </div>
+
+        <div id="main-user--edit">
+          <p id="tool-sort-user--editor">User Editor</p>
+          <select name="" id="user-edit-sort--select">
+            <option value="all">all</option>
+            <option value="manager">manager</option>
+            <option value="admin">admin</option>
+            <option value="assistant">assistant</option>
+            <option value="normal">normal</option>
+            <option value="open">open</option>
+            <option value="blocked">blocked</option>
+            <option value="suspended">suspended</option>
+          </select>
+          <button id="btnsort-reload-users--accounts" class="bntsort-users">
+            Refresh
+          </button> <br>
+          <input id="search-for-user-user--edit" type="text" placeholder="search for user">
+
+          <div id="users-container--edit"></div>
+          <div id="user-edit--tools">
+            <input id="input-userid-for-change--details" type="text" /> <br />
+
+            <select name="" id="user-edit-select-change--to">
+              <option value="admin">admin</option>
+              <option value="manager">manager</option>
+              <option value="assistant">assistant</option>
+              <option value="normal">normal</option>
+              <option value="blocked">blocked</option>
+              <option value="suspended">suspended</option>
+              <option value="open">open</option>
+            </select>
+            <br />
+            <button id="btnapply-change-user--details">apply</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-setings--container">
+        <button>⬅</button>
+        <h1>App Setings</h1>
+
+        <p class="setings-description--text">
+          1 year app plan cost $<span id="value-change-setings-plan-price--year"
+            >249</span
+          >
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-plan-price--year"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          1 peso equals
+          <span id="value-change-setings-points-to--pesos">123</span> points
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-points-to--pesos"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          The general discount for app plan
+          <span id="value-change-setings-general--discount">90</span>%
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-general--discount"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Special discount
+          <span id="value-change-setings-special--discount1">65</span>% for
+          <span id="value-change-setings-special-discount1--days">3</span> days
+          after plan is done
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special--discount1"
+        />
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special-discount1--days"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Special discount
+          <span id="value-change-setings-special--discount2">45</span>% for
+          <span id="value-change-setings-special-discount2--days">5</span> days
+          after plan is done
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special--discount2"
+        />
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special-discount2--days"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Special discount
+          <span id="value-change-setings-special--discount3">20</span>% for
+          <span id="value-change-setings-special-discount3--days">10</span> days
+          after plan is done
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special--discount3"
+        />
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-special-discount3--days"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          App Trial time
+          <span id="value-change-setings-app-trial--time">30</span> days
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-app-trial--time"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Auto-delete the ask messages after
+          <span id="value-change-setings-auto-delete--askmessages">53</span>
+          days
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-auto-delete--askmessages"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          1 day equals
+          <span id="value-change-setings-milliseconds-equals--day">50003</span>
+          milliseconds
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-milliseconds-equals--day"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Standart app version users have to wait
+          <span id="value-change-setings-wait-days-publish--again">63</span>
+          days before publishing a Sell-Item again
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-wait-days-publish--again"
+        />
+        <div class="setings-seperator"></div>
+
+        <p class="setings-description--text">
+          Wait
+          <span id="value-change-setings-wait-days--republish">33</span> days
+          before republishing a Sell-Item again
+        </p>
+        <input
+          type="number"
+          class="setings-inputs"
+          id="input-change-setings-wait-days--republish"
+        />
+        <div class="setings-seperator"></div>
+        <button id="btncancel-change--setings">cancel</button>
+        <button id="btnreset-change--setings">reset</button>
+        <button id="btnapply-change--setings">apply changes</button>
+      </div>
+
+      <div id="main-answerquestion--container">
+        <button>🔙</button>
+        <p>App Answers</p>
+      </div>
+
+      <div id="users-disp--container">
+        <button>🔙</button><br />
+        <button id="btnsort-plan">plan</button>
+        <button id="btnsort-ontrial">on-trial</button>
+        <button id="btnsort-no--plan">no plan</button>
+        <button id="btnsort-all">all</button>
+        <p>Users</p>
+      </div>
+
+      <div id="menu-container">
+        <div>
+          <button id="btnmenu-back">✖️</button>
+          <p id="my-account" class="menu-options">Mi Cuenta</p>
+          <p id="setings" class="menu-options">Ajustes</p>
+          <p id="help" class="menu-options">Ayuda</p>
+          <p id="about" class="menu-options">Acerca de la app</p>
+
+          <button id="btnstats" class="btnsmenuspc">Statistics</button>
+          <button id="btntools" class="btnsmenuspc">Tools</button>
+          <button id="btnsetings" class="btnsmenuspc">Setings</button>
+          <button id="btnanswerquestion" class="btnsmenuspc">Answer</button>
+        </div>
+      </div>
+
+      <div id="confirmation-container">
+        <div id="con">
+          <p>¿Estas seguro que quieres eliminar tu cuenta?</p>
+        </div>
+        <p id="hide-bar">➖</p>
+      </div>
+
+      <div id="doublecheck-confirm--container">
+        <div id="con">
+          <h1>⚠ Alerta ⚠</h1>
+          <p>¿Estas seguro que quieres continuar?</p>
+
+          <button id="btndoublecheck-cancel" class="btnno">cancelar</button>
+          <button id="btndoublecheck-confirm" class="btnyes">confirmar</button>
+        </div>
+      </div>
+
+      <!-- start modal sell -->
+      <div id="modal-sell" class="translated">
+        <p id="modal-sell--description">
+          --- Publica --- <br />
+          <span>aquí</span>
+          <!-- <span>tus cosas aquí a miles de usuarios</span> -->
+        </p>
+
+        <div id="imgs-for-sell-items--con">
+          <p>tus fotos</p>
+        </div>
+
+        <button id="include-fotos">Incluir Fotos</button>
+
+        <button id="btndelete-imgs">Eliminar fotos</button>
+
+        <div class="inputs-sell">
+          <input
+            id="inputname-sell"
+            class="inputs-sell--in"
+            type="text"
+            placeholder="Nombre del articulo aquí"
+          />
+
+          <textarea
+            name=""
+            id="inputdescription-sell"
+            class="inputs-sell"
+            cols="30"
+            rows="4"
+            placeholder="Describe el articulo que vendes aquí"
+          ></textarea>
+        </div>
+
+        <div class="inputs-sell">
+          Precio: $<input
+            id="inputprice-sell"
+            class="inputs-sell--in"
+            type="number"
+            placeholder="9,999"
+          />
+        </div>
+
+        <div class="inputs-sell">
+          Estado:<select
+            name=""
+            id="inputlocation-sell"
+            class="inputs-sell--in"
+          >
+            <option value="">Campeche</option>
+            <option value="">Yucatán</option>
+            <option value="">Quintana Roo</option>
+            <option value="">Chihuahua</option>
+            <option value="">Durango</option>
+            <option value="">Sinaloa</option>
+            <option value="">Sonora</option>
+            <option value="">D.F</option>
+            <option value="">Coahuila</option>
+            <option value="">Nuevo León</option>
+            <option value="">Tamaulipas</option>
+            <option value="">San Luis Potosí</option>
+            <option value="">Guanajuato</option>
+            <option value="">Jalisco</option>
+            <option value="">Michoacan</option>
+            <option value="">Guerrero</option>
+            <option value="">Puebla</option>
+            <option value="">Veracruz</option>
+            <option value="">Oaxaca</option>
+            <option value="">Chiapas</option>
+            <option value="">Tabasco</option>
+            <option value="">Nayarit</option>
+            <option value="">Zacatecas</option>
+            <option value="">Villa Hermosa</option>
+            <option value="">Baja California</option>
+            <option value="">Baja California Sur</option>
+            <option value="">Tlaxcala</option>
+            <option value="">Hidalgo</option>
+            <option value="">Queretaro</option>
+            <option value="">Aguas Calietes</option>
+            <option value="">Colima</option>
+            <option value="">Morelos</option>
+          </select>
+        </div>
+        <button id="btnsend">Listo</button><br />
+        <button id="btnsend-cancel">Cancelar</button>
+      </div>
+      <div class="con-imgs-display--screen">
+        <div>
+          <button id="imgs-from--description">fotos de ------</button>
+        </div>
+        <div id="con-imgs-display--big"></div>
+      </div>
+      <div id="spinner">
+        <div>
+          <div class="container-spinner--logo for-spinner-spinner--logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <p>Un momento...</p>
+        </div>
+      </div>
+
+      <!-- <div id="div--spinner"> -->
+      <div class="container-spinner--logo">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <!-- </div> -->
+      <!-- end modal sell -->
+    </div>
+
+    <!-- end main-display -->
+  </body>
+</html>
+
+<!-- <span class="users-userlevel-change i"><select
+  name=""
+  class="change-user-level"
+  class="inputs-Whats-Check"
+  >
+  <option value="admin">admin</option>
+  <option value="manager">manager</option>
+  <option value="assistant">assistant</option>
+  <option value="normal">normal</option>
+  </select><button class="btnchange-user-level">Change</button></span><br> -->
+<!-- blocked, suspended, open -->
+<!-- <span class="users-accountStatus-change i"><select
+  name=""
+  class="change-account-status"
+  class="inputs-Whats-Check"
+  >
+  <option value="admin">open</option>
+  <option value="manager">suspended</option>
+  <option value="assistant">blocked</option>
+  </select><button class="btnchange-user-level">Change</button></span><br> -->
+
+<!-- <button id="btnsort-manager" class="bntsort-users">manager</button> -->
+<!-- <button id="btnsort-admin" class="bntsort-users">admin</button> -->
+<!-- <button id="btnsort-assistant" class="bntsort-users">assistant</button> -->
+<!-- <button id="btnsort-normal" class="bntsort-users">normal</button><br> -->
+<!-- <button id="btnsort-open" class="bntsort-users">open</button> -->
+<!-- <button id="btnsort-suspended" class="bntsort-users">suspended</button> -->
+<!-- <button id="btnsort-blocked" class="bntsort-users">blocked</button> -->
+<!-- <button id="btnsort-all-users--edit" class="bntsort-users">all</button> -->

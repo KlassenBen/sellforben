@@ -1,0 +1,500 @@
+/* Start Container Main Buy */
+#container-main--buy {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  /* background-color: #79b68a69; */
+  height: 92%;
+  overflow-y: scroll;
+}
+
+/* --> Start Top Bar */
+
+#top-bar {
+  background-color: #009c2c;
+  height: 3%;
+  display: none;
+}
+
+#btnmenu {
+  /* display: inline; */
+  position: absolute;
+  left: 2%;
+}
+
+#btnbuy-search {
+  position: absolute;
+  right: 2%;
+}
+
+#buy-search--input {
+  text-align: right;
+}
+
+/* --> End Top Bar */
+
+/* --> Start Menu Container */
+
+#menu-container {
+  display: none;
+  background-color: var(--color-green-1);
+  height: 100%;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.menu-options {
+  display: block;
+  text-align: left;
+}
+
+#btnstats {
+  display: block;
+}
+
+#cur-user--info--container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #55ff85;
+  /* border: solid 3px red; */
+}
+
+/* --> End Menu Container */
+
+/* --> start Stats */
+
+#stats-container {
+  height: 100%;
+  width: 100%;
+}
+
+#users-disp {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.stats-user--disp {
+  display: inline-block;
+  border: solid 2px red;
+  background-color: #fff;
+  height: 10%;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+/* .stats-user--disp,
+  #username,
+  #userphonenum,
+  #userpasword,
+  #userpro,
+  #userwhatsapp {
+    display: block;
+  } */
+
+/* .stats-user--disp #username {
+  } */
+
+.stats-user--disp #userphonenum {
+  float: left;
+}
+.stats-user--disp #userpasword {
+  float: right;
+}
+/* .stats-user--disp #userpro {
+  }
+  .stats-user--disp #userwhatsapp {
+  } */
+
+/* --> End Stats */
+
+/* --> Start Items */
+#time-advertised {
+  margin: 3px;
+  display: block;
+  text-align: right;
+}
+
+img {
+  float: left;
+  margin: 0 8px 4px 3px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.container-item {
+  border: solid 1px var(--color-white-1);
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: var(--color-white-1);
+}
+
+.btncontainer {
+  text-align: right;
+}
+
+.name-seller {
+  margin-left: 20px;
+  display: block;
+  text-align: left;
+}
+
+.price {
+  text-align: left;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+}
+
+.text-location {
+  text-align: left;
+  font-size: 10px;
+}
+
+.location {
+  display: block;
+  text-align: left;
+  border-bottom: solid 1.8px var(--color-gray-1);
+  margin-bottom: 5px;
+}
+
+.name-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 24;
+  /* border-bottom: solid 1px rgba(30, 30, 30, 0.864); */
+}
+
+/* .container-pricelocation--sell {
+    border: solid 3px red;
+  } */
+
+/* .text-seller {
+    margin: 4px;
+    display: block;
+    text-align: left;
+  } */
+
+.description-item {
+  margin-left: 4.2%;
+  display: block;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+}
+
+.btncontact-buy {
+  position: relative;
+  margin: 0px 10px 5px 0;
+}
+/* --> End Items */
+/* End Container Main Buy */
+
+/* Start Container Main ask */
+#container-main--ask {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  /* background-color: #79b68a69; */
+  height: 92%;
+  overflow-y: scroll;
+}
+
+#btnaskDiv {
+  display: block;
+}
+
+.btnask {
+  /* display: block;
+    width: 30%;
+    font-size: 16px;
+    padding: 3px 0px 0 0;
+    position: absolute;
+    bottom: 10%;
+    left: 10%; */
+  letter-spacing: 2px;
+  padding: 1% 3%;
+  border-radius: 10%;
+  border: solid 3px var(--color-orange-1);
+  position: absolute;
+  right: 3%;
+  bottom: 7%;
+  color: var(--color-white-1);
+  background-color: var(--color-green-2);
+  transition: 0.5s;
+  text-shadow: 1px 1px 2px var(--color-textshadow-2);
+}
+
+.ask-description--text {
+  background-color: var(--color-orange-2);
+  color: var(--color-white-1);
+  width: 90%;
+  font-size: 16px;
+  padding: 3px 0px 0 0;
+  /* position: fixed; */
+  top: 10%;
+  left: 5%;
+  transition: 1s;
+}
+
+.ask-description_text {
+  font-size: 20px;
+}
+
+.btncontact-ask {
+  margin-top: 19px;
+}
+
+.name-item--ask {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 24;
+}
+
+.description-item--ask {
+  margin-left: 15px;
+  display: block;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  text-align: center;
+}
+
+.container-item--ask {
+  border: solid 1px var(--color-orange-2);
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: var(--color-orange-3);
+}
+
+/* --> start Modal Input Ask*/
+#modal-input--ask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-backg-2);
+}
+
+#textarea-ask {
+  border: 2px solid;
+  margin: 30px;
+  width: 500px;
+  height: 50px;
+  background: #ddd;
+  font-family: Helvetica;
+  font-size: 17pt;
+  resize: none;
+  overflow: hidden;
+}
+
+/* --> end Modal Input Ask*/
+/* End Container Main ask */
+
+/* Start Container Main Sell */
+#container-main--sell {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  /* background-color: #79b68a69; */
+  height: 92%;
+  overflow-y: scroll;
+}
+
+/* --> Start Modal Sell */
+#modal-sell {
+  background-color: var(--color-backg-1);
+  border: solid 2.5px var(--color-backg-1);
+  border-radius: 5px;
+  max-width: 350px;
+  height: 300px;
+  /* position: relative; */
+  /* bottom: -200px; */
+  max-height: 400px;
+  /* transition: 1s;s */
+  display: none;
+}
+
+#inputdescription-sell {
+  width: 97.1%;
+  text-align: center;
+  margin-left: 5px;
+}
+
+#inputname-sell {
+  text-align: center;
+  width: 90%;
+  color: black;
+}
+
+#inputprice-sell {
+  width: 90px;
+}
+/* --> End Modal Sell */
+/* End Container Main Sell */
+
+/* Start container main message */
+.container-message {
+  background-color: var(--color-backg-2);
+  position: absolute;
+  /* transform: translateX(100%); */
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+/* End container main message */
+
+/* Start Footer */
+#footer {
+  position: fixed;
+  bottom: 0%;
+  text-align: center;
+  height: 5%;
+  width: 100%;
+  background-color: var(--color-green-1);
+}
+
+.btncolum {
+  position: relative;
+  top: 20%;
+  border: solid 1% var(--color-orange-1);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 165%;
+  width: 30%;
+  background-color: var(--color-backg-2);
+  color: var(--color-white-1);
+  text-shadow: 2px 2px var(--color-textshadow-1);
+
+  /* position: fixed; */
+  /* bottom: 0%;
+    text-align: center;
+    height: 5%; */
+  /* width: 100%; */
+  /* background-color: #009c2c; */
+}
+
+/* End Footer */
+
+/* btn IDs */
+
+#btnpublish {
+  letter-spacing: 2px;
+  padding: 1% 3%;
+  border-radius: 10%;
+  border: solid 3px var(--color-green-2);
+  position: absolute;
+  right: 3%;
+  bottom: 7%;
+  color: var(--color-white-1);
+  background-color: var(--color-orange-1);
+  transition: 0.5s;
+  text-shadow: 1px 1px 2px var(--color-textshadow-2);
+}
+
+/* Classes */
+.hiden {
+  opacity: 0;
+}
+
+.translated {
+  /* transform: translateX(-100%); */
+}
+
+.createaccount-inputs-description {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 15px 0 4px 40px;
+
+  display: block;
+  text-align: left;
+}
+
+.inputs-sell {
+  margin: 5px;
+  border: none;
+  border-bottom: solid 2px black;
+  display: block;
+  background-color: var(--color-white-1);
+}
+
+.inputs-sell--in {
+  margin: 5px;
+  border: none;
+  border-bottom: solid 1px var(--color-gray-1);
+  display: inline;
+  background-color: var(--color-white-1);
+}
+
+/* .btnWhatsapp {
+  }
+  
+  .btncall {
+  }
+  
+  .bntmessage {
+  } */
+
+/* btn classes */
+
+.btnwhatsapp {
+  background-color: var(--color-green-1);
+  color: var(--color-white-1);
+  border: none;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.btncall {
+  background-color: var(--color-orange-1);
+  border: none;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.btnmessage {
+  background-color: var(--color-orange-1);
+  color: var(--color-gray-1);
+  border: none;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* clarfix */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hiden-footer {
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.background-color--remove {
+  background-color: none;
+}
+
+#promodal {
+  border-radius: 10%;
+  position: absolute;
+  /* top: 35%; */
+  /* display: inline-block; */
+  width: 80%;
+  height: 60%;
+  background-color: var(--color-green-1);
+  transition: 0.12s;
+  /* transform: translateX(-50%); */
+  box-shadow: 2px 2px 6px 1px var(--color-boxshadow-1);
+}
